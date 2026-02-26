@@ -1,0 +1,11 @@
+START
+
+SET Number1 = 10
+SET Number2 = 20
+SET Number3 = 30
+
+SET sum = Number1 + Number2 + Number3
+SET average = sum / 3
+PRINT average
+
+END
