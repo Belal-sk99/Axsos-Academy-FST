@@ -1,0 +1,23 @@
+START
+
+INPUT n
+
+IF n < 0 THEN
+    PRINT "Please enter a non-negative integer."
+    STOP
+END IF
+
+SET factorial = 1
+
+IF n equals 0 OR n equals 1 THEN 
+    PRINT factorial
+    EXIT
+END IF
+
+FOR i from 1 TO n
+    factorial = factorial * i
+END FOR
+
+PRINT factorial 
+
+END
