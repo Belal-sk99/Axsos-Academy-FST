@@ -1,0 +1,38 @@
+*{
+    margin: .5rem;
+}
+h1 {
+    background-color: black;
+    color: #00ffff;
+    text-align: start;
+    padding: .25rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+h2 {
+    background-color: #663399;
+    color: white;
+    text-align: center;
+    font-style: italic;
+    font-family: Courier, monospace;
+    padding: .25rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+h3 {
+    background-color: #9fc5f8;
+    color: black;
+    text-align: end;
+    text-decoration: underline;
+    font-weight: normal;
+    padding: .25rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+h1 span {
+    color: white;
+    margin: 0;
+}
