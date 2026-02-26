@@ -1,0 +1,15 @@
+START
+
+INPUT Length
+INPUT Width
+
+IF Length <= 0 OR Width <= 0 THEN
+    PRINT "Length and Width must be positive numbers "
+    EXIT
+END IF
+
+SET Area = Length * Width
+
+PRINT Area
+
+END
