@@ -1,0 +1,17 @@
+START
+
+INPUT N
+IF N < 1
+    PRINT "Please enter a positive integer > 0 "
+    EXIT
+END IF
+
+SET sum = 0
+
+FOR i from 1 TO N
+    sum = sum + i
+END FOR
+
+PRINT sum
+
+END
