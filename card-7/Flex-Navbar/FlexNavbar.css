@@ -14,6 +14,9 @@ a {
   transition: 0.3s ease-out;
 }
 .btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: rgb(31, 145, 165);
   color: white;
   padding-left: 1rem;
@@ -49,4 +52,33 @@ a {
   background-color: rgb(71, 71, 71);
   color: white;
   font-family: "Roboto", sans-serif, Arial, Helvetica, sans-serif;
+}
+
+@media (max-width: 768px) {
+  .nav {
+    flex-direction: column;
+    align-items: flex-start;
+    height: auto;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    width: 100%;
+    gap: 1rem;
+    margin-top: 0.5rem;
+  }
+
+  .nav-links li {
+    width: 100%;
+  }
+
+  .nav-links a,
+  .nav-links button {
+    width: 100%;
+    text-align: left;
+  }
+
+  .btn {
+    width: 100%;
+  }
 }
