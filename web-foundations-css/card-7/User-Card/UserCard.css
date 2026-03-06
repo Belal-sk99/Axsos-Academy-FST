@@ -1,0 +1,99 @@
+:root {
+  --avatar-size: 65px;
+  --avatar-overlap: calc(var(--avatar-size) / 2);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.gap-1 {
+  gap: 1rem;
+}
+.gap-2 {
+  gap: 2rem;
+}
+
+.flex-1 {
+  flex: 1 1 0%;
+}
+.flex-3 {
+  flex: 3 1 0%;
+}
+
+.justify-end {
+  justify-content: end;
+}
+.justify-start {
+  justify-content: start;
+}
+.items-start {
+  align-items: start;
+}
+
+.px-1 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.px-2 {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+.py-1 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.py-2 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.w-100vh {
+  height: 100vh;
+}
+
+.relative {
+  position: relative;
+}
+.absolute {
+  position: absolute;
+}
+
+.bg-lightBlue {
+  background-color: rgb(64, 190, 221);
+}
+
+.card {
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  height: 270px;
+  width: 450px;
+}
+
+.profile-placeholder {
+  top: 0;
+  transform: translateY(-50%);
+  width: var(--avatar-size);
+  height: var(--avatar-size);
+  overflow: hidden;
+  background-color: white;
+  border: 1px solid gray;
+  border-radius: 50%;
+}
+
+.info-section{
+  padding-top: var(--avatar-overlap);
+}
