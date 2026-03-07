@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./ProfilePage.css" />
+    <title>Profile Page</title>
+  </head>
+  <body>
+    <div class="nav">
+      <h1 class="text-xl tracking-wide">Profile</h1>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#" class="active">My Profile</a></li>
+        <li><a href="#">Find Connections</a></li>
+        <li><button class="btn">Sign Out</button></li>
+      </ul>
+    </div>
+
+    <main class="flex-center flex-wrap items-start gap-2 pt-2 pb-3 main-wrap">
+      <!-- Left Column -->
+      <div class="flex-col gap-2">
+        <!-- Profile Card -->
+        <div
+          class="flex-col border rounded-sm bg-white shadow-lg w-card h-profile"
+        >
+          <div class="flex-1 bg-lightBlue"></div>
+          <div
+            class="info-section relative flex-col flex-3 items-start gap-1 px-1"
+          >
+            <figure class="profile-placeholder absolute flex-center">
+              <img
+                src="./assets/imgs/jane-m.jpg"
+                alt="profile picture"
+                width="100%"
+                height="100%"
+              />
+            </figure>
+            <h2 class="text-lg font-bold">Jane Doe</h2>
+            <div class="flex-center gap-half">
+              <img
+                src="./assets/icons/map-marker.png"
+                alt="location"
+                width="13px"
+                height="20px"
+              />
+              <h3 class="text-md text-gray font-normal">Seattle</h3>
+            </div>
+            <div class="flex-col">
+              <p class="text-base text-dark leading-relaxed">
+                Developer | Engineer | Problem Solver
+              </p>
+              <p class="text-base text-dark leading-relaxed">
+                Master of Shadows and the Internet!
+              </p>
+            </div>
+            <div class="flex-center gap-half">
+              <img
+                src="./assets/icons/gear.png"
+                alt=""
+                width="20px"
+                height="20px"
+              />
+              <a
+                href="#"
+                class="text-teal text-base no-underline hover-underline"
+                >edit profile</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- Education Card -->
+        <div class="flex-col border rounded-sm bg-white shadow-lg w-card">
+          <div
+            class="px-1 py-half flex-center justify-start bg-dark text-white font-semibold text-md"
+          >
+            <h3>Education</h3>
+          </div>
+          <div class="flex-col gap-half px-1 py-1">
+            <h4 class="text-md font-bold text-dark">
+              Coding Dojo - Full Stack Bootcamp
+            </h4>
+            <p class="text-sm text-muted">Dec 2019 - Mar 2020</p>
+            <p class="text-base text-gray">
+              Triple black belt in Python, MERN, and C#...
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Column -->
+      <div class="flex-col gap-2">
+        <!-- Connection Requests Card -->
+        <div class="flex-col border rounded-sm bg-white shadow-lg w-sidebar">
+          <div
+            class="px-1 py-half flex-center justify-start gap-half bg-dark text-white font-semibold text-md"
+          >
+            <span class="badge">2</span>
+            <h3>Connection Requests</h3>
+          </div>
+          <div class="flex-col">
+            <div
+              class="border-b flex-row items-center justify-between px-1 py-half"
+            >
+              <div class="flex-center gap-half">
+                <figure
+                  class="size-36 rounded-full overflow-hidden shrink-0 bg-white flex-center"
+                >
+                  <img
+                    src="./assets/imgs/todd-s.jpg"
+                    alt=""
+                    width="100%"
+                    height="100%"
+                    class="object-cover"
+                  />
+                </figure>
+                <span class="text-base font-medium text-dark">Todd E</span>
+              </div>
+              <div class="flex-center gap-half">
+                <button class="icon-btn" title="Accept">
+                  <img src="./assets/icons/accept-circle.png" alt="Accept" />
+                </button>
+                <button class="icon-btn" title="Decline">
+                  <img src="./assets/icons/close-circle.png" alt="Decline" />
+                </button>
+              </div>
+            </div>
+            <div class="flex-row items-center justify-between px-1 py-half">
+              <div class="flex-center gap-half">
+                <figure
+                  class="size-36 rounded-full overflow-hidden shrink-0 bg-white flex-center"
+                >
+                  <img
+                    src="./assets/imgs/phil-s.jpg"
+                    alt=""
+                    width="100%"
+                    height="100%"
+                    class="object-cover"
+                  />
+                </figure>
+                <span class="text-base font-medium text-dark">Phil K</span>
+              </div>
+              <div class="flex-center gap-half">
+                <button class="icon-btn" title="Accept">
+                  <img src="./assets/icons/accept-circle.png" alt="Accept" />
+                </button>
+                <button class="icon-btn" title="Decline">
+                  <img src="./assets/icons/close-circle.png" alt="Decline" />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Your Connections Card -->
+        <div class="flex-col border rounded-sm bg-white shadow-lg w-sidebar">
+          <div
+            class="px-1 py-half flex-center justify-start gap-half bg-dark text-white font-semibold text-md"
+          >
+            <span class="badge badge-outline">500+</span>
+            <h3>Your Connections</h3>
+          </div>
+          <div class="flex-col">
+            <div class="border-b flex-row items-center gap-half px-1 py-half">
+              <figure
+                class="size-36 rounded-full overflow-hidden shrink-0 flex-center"
+              >
+                <img
+                  src="./assets/imgs/adrien-s.jpg"
+                  alt="Adrien"
+                  width="100%"
+                  height="100%"
+                  class="object-cover"
+                />
+              </figure>
+              <span class="text-base font-medium text-dark">Adrien D</span>
+            </div>
+            <div class="border-b flex-row items-center gap-half px-1 py-half">
+              <figure
+                class="size-36 rounded-full overflow-hidden shrink-0 flex-center"
+              >
+                <img
+                  src="./assets/imgs/anne-s.jpg"
+                  alt="Anne"
+                  width="100%"
+                  height="100%"
+                  class="object-cover"
+                />
+              </figure>
+              <span class="text-base font-medium text-dark">Anne J</span>
+            </div>
+            <div class="border-b flex-row items-center gap-half px-1 py-half">
+              <figure
+                class="size-36 rounded-full overflow-hidden shrink-0 flex-center"
+              >
+                <img
+                  src="./assets/imgs/alayne-s.jpg"
+                  alt="Alayne"
+                  width="100%"
+                  height="100%"
+                  class="object-cover"
+                />
+              </figure>
+              <span class="text-base font-medium text-dark">Alayne T</span>
+            </div>
+            <div class="border-b flex-row items-center gap-half px-1 py-half">
+              <figure
+                class="size-36 rounded-full overflow-hidden shrink-0 flex-center"
+              >
+                <img
+                  src="./assets/imgs/arry-s.jpg"
+                  alt="Arry"
+                  width="100%"
+                  height="100%"
+                  class="object-cover"
+                />
+              </figure>
+              <span class="text-base font-medium text-dark">Arry Y</span>
+            </div>
+            <div class="px-1 py-half">
+              <a
+                href="#"
+                class="text-teal text-base no-underline hover-underline"
+                >View More</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
