@@ -62,7 +62,7 @@
   padding-bottom: 2rem;
 }
 .w-100vh {
-  height: 100vh;
+  width: 100vh;
 }
 
 .relative {
@@ -94,6 +94,6 @@
   border-radius: 50%;
 }
 
-.info-section{
+.info-section {
   padding-top: var(--avatar-overlap);
 }

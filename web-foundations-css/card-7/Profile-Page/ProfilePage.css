@@ -1,3 +1,7 @@
+.flex {
+  display: flex;
+  gap: 1rem;
+}
 :root {
   --avatar-size: 65px;
   --avatar-overlap: calc(var(--avatar-size) / 2);
@@ -5,8 +9,8 @@
   --color-teal: rgb(31, 145, 165);
   --color-teal-dark: rgb(0, 69, 82);
   --color-teal-light: rgb(64, 190, 221);
-  --color-nav: rgb(71, 71, 71);
-  --color-header-bg: rgb(80, 80, 80);
+  --color-nav: rgb(27, 27, 27);
+  --color-header-bg: rgb(51, 51, 51);
   --card-width: 450px;
   --sidebar-width: 260px;
 }
@@ -31,10 +35,8 @@ body {
   position: sticky;
   top: 0;
   z-index: 100;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
-  padding: 0 3rem;
-  gap: 3rem;
   background-color: var(--color-nav);
   color: white;
 }
@@ -104,14 +106,14 @@ body {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  background-color: var(--color-teal);
-  color: white;
-  border-radius: 999px;
+  background-color: rgb(200, 200, 200);
+  color: rgb(26, 26, 26);
+  border-radius: 50%;
   font-size: 0.75rem;
   font-weight: 700;
   min-width: 22px;
   height: 22px;
-  padding: 0 5px;
+  padding: 0 .5rem;
 }
 .badge-outline {
   background-color: transparent;
@@ -310,6 +312,10 @@ body {
 .border {
   border: 1px solid #ccc;
 }
+.border-3 {
+  border: 3px solid #ccc;
+}
+
 .border-b {
   border-bottom: 1px solid #eee;
 }

@@ -1,0 +1,152 @@
+/* ===== Reset ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: inherit;
+}
+
+/* ===== Flex utilities ===== */
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.space-evenly {
+  justify-content: space-evenly;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.items-end {
+  align-items: flex-end;
+}
+
+.self-center {
+  align-self: center;
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+/* ===== Gap utilities ===== */
+.gap-1 {
+  gap: 1rem;
+}
+
+.gap-2 {
+  gap: 2rem;
+}
+
+button{
+  padding: 0.5rem 1rem;
+}
+
+input {
+  padding: 0.5rem;
+  color: black;
+}
+
+/* ===== Padding utilities ===== */
+.p-1 {
+  padding: 1rem;
+}
+.py-1 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.px-2 {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.ps-1 {
+  padding-left: 1rem;
+}
+
+/* ===== Borders ===== */
+.b-t-2 {
+  border-top: 0.2rem solid #000;
+}
+
+/* ===== Colors ===== */
+.bg-blue {
+  background-color: #2b5b84;
+}
+
+.bg-lightBlue {
+  background-color: #0b70a7;
+}
+
+.text-yellow {
+  color: #e0b20a;
+}
+
+.text-white {
+  color: #ffffff;
+}
+
+.text-black {
+  color: #000000;
+}
+
+.text-gray {
+  color: #b0b0b0;
+}
+
+.text-blue {
+  color: #2b5b84;
+}
+
+/* ===== Decoration ===== */
+.decoration-none {
+  text-decoration: none;
+}
+
+/* ===== Typography ===== */
+.font-italic {
+  font-style: italic;
+}
+
+/* ===== UI elements ===== */
+.rounded {
+  border-radius: 0.5rem;
+}
+
+.shadow-lg {
+  box-shadow: 0 0.4rem 0.8rem rgba(0, 0, 0, 0.3);
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+/* ===== Base elements ===== */
+body {
+  line-height: 1.5;
+  color: #e4e4e4;
+}
+
+a {
+  cursor: pointer;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}

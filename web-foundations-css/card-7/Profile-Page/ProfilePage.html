@@ -7,20 +7,18 @@
     <title>Profile Page</title>
   </head>
   <body>
-    <div class="nav">
-      <h1 class="text-xl tracking-wide">Profile</h1>
+    <header class="nav">
       <ul class="nav-links">
+        <h1 class="text-xl tracking-wide">Profile</h1>
         <li><a href="#">Home</a></li>
         <li><a href="#" class="active">My Profile</a></li>
         <li><a href="#">Find Connections</a></li>
-        <li><button class="btn">Sign Out</button></li>
       </ul>
-    </div>
+      <button class="btn">Sign Out</button>
+    </header>
 
     <main class="flex-center flex-wrap items-start gap-2 pt-2 pb-3 main-wrap">
-      <!-- Left Column -->
       <div class="flex-col gap-2">
-        <!-- Profile Card -->
         <div
           class="flex-col border rounded-sm bg-white shadow-lg w-card h-profile"
         >
@@ -28,7 +26,7 @@
           <div
             class="info-section relative flex-col flex-3 items-start gap-1 px-1"
           >
-            <figure class="profile-placeholder absolute flex-center">
+            <figure class="profile-placeholder absolute flex-center border-3">
               <img
                 src="./assets/imgs/jane-m.jpg"
                 alt="profile picture"
@@ -70,7 +68,6 @@
           </div>
         </div>
 
-        <!-- Education Card -->
         <div class="flex-col border rounded-sm bg-white shadow-lg w-card">
           <div
             class="px-1 py-half flex-center justify-start bg-dark text-white font-semibold text-md"
@@ -89,9 +86,7 @@
         </div>
       </div>
 
-      <!-- Right Column -->
       <div class="flex-col gap-2">
-        <!-- Connection Requests Card -->
         <div class="flex-col border rounded-sm bg-white shadow-lg w-sidebar">
           <div
             class="px-1 py-half flex-center justify-start gap-half bg-dark text-white font-semibold text-md"
@@ -153,12 +148,11 @@
           </div>
         </div>
 
-        <!-- Your Connections Card -->
         <div class="flex-col border rounded-sm bg-white shadow-lg w-sidebar">
           <div
             class="px-1 py-half flex-center justify-start gap-half bg-dark text-white font-semibold text-md"
           >
-            <span class="badge badge-outline">500+</span>
+            <span class="badge">500+</span>
             <h3>Your Connections</h3>
           </div>
           <div class="flex-col">
