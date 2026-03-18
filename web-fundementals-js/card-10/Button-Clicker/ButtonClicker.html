@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dojonary</title>
+    <link rel="stylesheet" href="ButtonClicker.css" />
+  </head>
+  <body>
+    <main class="flex flex-col w-75 self-center">
+      <nav class="flex items-center justify-between bg-gray p-4">
+        <h1 class="text-4xl">Dojonary</h1>
+        <input type="text" placeholder="Search" class="border px-3 py-2" />
+        <button
+          id="auth-btn"
+          class="bg-blue text-white border px-4 py-2 shadow"
+          onclick="toggleAuth()"
+        >
+          Login
+        </button>
+      </nav>
+
+      <div class="flex gap-6 py-6">
+        <div class="flex flex-col gap-4 flex-2">
+          <div class="border p-6 flex items-center gap-8">
+            <div class="flex flex-col gap-6">
+              <div class="flex flex-col gap-2 items-center">
+                <span class="text-4xl">ninja</span>
+                <span class="italic">noun</span>
+                <span class="text-sm">Plural: <em>ninjas</em></span>
+              </div>
+              <button
+                class="bg-yellow border px-4 py-2 shadow mt-auto"
+                onclick="handleLike()"
+              >
+                13 likes
+              </button>
+            </div>
+            <div class="flex-1">
+              <p>
+                A practitioner skilled in the <a href="#">Japanese</a> art of
+                <a href="#">ninjutsu</a>
+              </p>
+            </div>
+          </div>
+
+          <div class="border p-6 flex items-center gap-8">
+            <div class="flex flex-col gap-6">
+              <div class="flex flex-col gap-2 items-center">
+                <span class="text-4xl">ninja</span>
+                <span class="italic">noun</span>
+                <span class="text-sm">Plural: <em>ninjas</em></span>
+              </div>
+              <button
+                class="bg-yellow border px-4 py-2 shadow mt-auto"
+                onclick="handleLike()"
+              >
+                37 likes
+              </button>
+            </div>
+            <div class="flex-1">
+              <p>
+                A <a href="#">programmer</a> who breaks down problems with
+                <a href="#">zen</a>-like focus
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="border p-6 flex flex-col gap-4 flex-1 align-self-start">
+          <p class="text-xl">Dojonary is defined by <strong>YOU</strong></p>
+          <button
+            id="add-def-btn"
+            class="bg-green text-white border py-2 shadow"
+            onclick="removeAddButton()"
+          >
+            Add Definition
+          </button>
+        </div>
+      </div>
+    </main>
+    <script src="ButtonClicker.js"></script>
+  </body>
+</html>
