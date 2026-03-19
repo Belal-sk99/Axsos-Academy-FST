@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Likes</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="p-6">
+    <div class="border p-6" style="max-width: 560px">
+      <div class="flex items-center justify-between mb-4">
+        <span class="text-2xl font-bold">Some User</span>
+        <span id="count-single" class="text-base">3 like(s)</span>
+        <button
+          class="bg-yellow border shadow-hard rounded-sm px-4 py-2 font-bold"
+          onclick="likeSingle()"
+        >
+          Like
+        </button>
+      </div>
+
+      <p class="text-base">
+        This is some filler text, it can say anything we like
+      </p>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

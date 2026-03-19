@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Likes</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav class="bg-black py-4 px-6 mb-4">
+      <span class="text-white text-2xl font-bold">Network</span>
+    </nav>
+
+    <h2 class="text-2xl font-bold text-center mb-4">Your Feed</h2>
+
+    <div class="flex gap-4 px-6" style="max-width: 900px; margin: 0 auto">
+      <div
+        class="border p-6 w-48 flex flex-col items-center gap-2"
+        style="align-self: flex-start"
+      >
+        <div
+          style="
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background: #111;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          "
+        >
+          <svg width="48" height="48" viewBox="0 0 24 24" fill="white">
+            <path
+              d="M12 12c2.7 0 4.8-2.1 4.8-4.8S14.7 2.4 12 2.4 7.2 4.5 7.2 7.2 9.3 12 12 12zm0 2.4c-3.2 0-9.6 1.6-9.6 4.8v2.4h19.2v-2.4c0-3.2-6.4-4.8-9.6-4.8z"
+            />
+          </svg>
+        </div>
+        <a href="#" class="underline text-sm" style="color: #1a73e8"
+          >Add an avatar</a
+        >
+        <span class="font-bold text-base">James Doe</span>
+      </div>
+
+      <div class="flex flex-col gap-4 flex-1">
+        <div class="border p-6">
+          <div class="flex items-center justify-between mb-4">
+            <span class="text-lg font-bold">Neil M</span>
+            <span id="count-0" class="text-base">9 like(s)</span>
+            <button
+              class="bg-yellow border shadow-hard rounded-sm px-4 py-2 font-bold"
+              onclick="likePost(0)"
+            >
+              Like
+            </button>
+          </div>
+          <p class="text-base">
+            I just set up this new discord bot, let me know what you all think.
+            <a href="#">link</a>
+          </p>
+        </div>
+
+        <div class="border p-6">
+          <div class="flex items-center justify-between mb-4">
+            <span class="text-lg font-bold">Nichole K</span>
+            <span id="count-1" class="text-base">12 like(s)</span>
+            <button
+              class="bg-yellow border shadow-hard rounded-sm px-4 py-2 font-bold"
+              onclick="likePost(1)"
+            >
+              Like
+            </button>
+          </div>
+          <p class="text-base">
+            Just finished my <a href="#">next comic</a>, check it out.
+          </p>
+        </div>
+
+        <div class="border p-6">
+          <div class="flex items-center justify-between mb-4">
+            <span class="text-lg font-bold">Jim R</span>
+            <span id="count-2" class="text-base">9 like(s)</span>
+            <button
+              class="bg-yellow border shadow-hard rounded-sm px-4 py-2 font-bold"
+              onclick="likePost(2)"
+            >
+              Like
+            </button>
+          </div>
+          <p class="text-base">
+            I can't stop listening to the <a href="#">new album</a>. Who else is
+            liking it?
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
