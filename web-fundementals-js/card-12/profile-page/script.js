@@ -13,23 +13,17 @@ function getConnectionCount() {
   return document.querySelector("#connection-count");
 }
 
-function acceptRequest(element) {
-  const listItem = element.closest(".card-list-item");
-  listItem.remove();
-
-  const requestBadge = getRequestCount();
-  requestBadge.textContent = parseInt(requestBadge.textContent, 10) - 1;
-
-  const connectionBadge = getConnectionCount();
-  connectionBadge.textContent = parseInt(connectionBadge.textContent, 10) + 1;
-}
-
-function rejectRequest(element) {
+const handleRequest = (element, action) => {
   const listItem = element.closest(".card-list-item");
   listItem.remove();
 
   const requestBadge = getRequestCount();
   requestBadge.textContent = parseInt(requestBadge.textContent, 10) - 1;
   const current = parseInt(requestBadge.textContent, 10);
-  requestBadge.textContent = Math.max(0, current - 1);
-}
+  requestBadge.textContent = Math.max(0, current);
+
+  if (action === "accept") {
+    const connectionBadge = getConnectionCount();
+    connectionBadge.textContent = parseInt(connectionBadge.textContent, 10) + 1;
+  }
+};
